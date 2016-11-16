@@ -17,13 +17,14 @@
           <%= text_field_tag :search, params[:search], placeholder: "Where are you going?", class: "form-control" %>
         </div>
       <% end %>
-
-      <ul class="nav navbar-nav navbar-right">
         <li class="flags dropdown flags-columns open">
           <a href="#" id class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
             <span class="sr-only">United Staes</span>
             <i class="flag-us" aria-hidden="true">
+            </i>
           </a>
+      <ul class="nav navbar-nav navbar-right">
+        
         <% if(!user_signed_in?) %>
           <li><%= link_to "Log In", new_user_session_path %></li>
           <li><%= link_to "Sign Up", new_user_registration_path %></li>
