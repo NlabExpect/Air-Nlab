@@ -17,12 +17,7 @@
           <%= text_field_tag :search, params[:search], placeholder: "Where are you going?", class: "form-control" %>
         </div>
       <% end %>
-        <li class="flags dropdown flags-columns open">
-          <a href="#" id class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
-            <span class="sr-only">United Staes</span>
-            <i class="flag-us" aria-hidden="true">
-            </i>
-          </a>
+        
       <ul class="nav navbar-nav navbar-right">
         
         <% if(!user_signed_in?) %>
@@ -58,8 +53,14 @@
             <i class="fa fa-home fa-lg"></i> Become a Host
           <% end %>
         </li>
-
-        
+          <li class="flags dropdown flags-columns open">
+          <a href="#" id class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="true">
+            <span class="sr-only">United States</span>
+            <i class="flag-us" aria-hidden="true">
+            </i>
+          </a>
+            <% end %>
+        </li>
       </ul>
       
     </div><!--/.nav-collapse -->
