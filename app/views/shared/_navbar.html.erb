@@ -18,7 +18,15 @@
       <% end %>
         
       <ul class="nav navbar-nav navbar-right">
-              
+        <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+         US
+         <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+         <!-- dropdown menu links -->
+       </ul>
+      </div>      
         <% if(!user_signed_in?) %>
           <li><%= link_to "Log In", new_user_session_path %></li>
           <li><%= link_to "Sign Up", new_user_registration_path %></li>
