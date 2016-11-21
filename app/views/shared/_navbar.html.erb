@@ -16,17 +16,7 @@
           <%= text_field_tag :search, params[:search], placeholder: "Where are you going?", class: "form-control" %>
         </div>
       <% end %>
-	  <%= form_for @message, url: contact_path, html: { :class => "form-horizontal " } do |f| %>
-
-    <div class="form-group">
-        <%= f.label :country, :class => "col-md-3 control-label" %>
-        <div class="col-md-9">
-            <%= f.country_select :country, ["United States"], {}, { :class => "form-control" } %>
-        </div>
-    </div>
-
-    <%= f.submit "Submit", :class => "btn btn-default" %>
-<% end %>
+	  
       <ul class="nav navbar-nav navbar-right">
         <div class="btn-group">
         <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
